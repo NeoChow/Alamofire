@@ -2,4 +2,10 @@
 
 import PackageDescription
 
-let package = Package(name: "Alamofire", dependencies : [], exclude: ["Tests"])
+let package = Package(name: "Alamofire",
+platforms: [.iOS(.v10)],
+products: [.library(name: "Alamofire",
+                    targets: ["Alamofire"])],
+targets: [.target(name: "Alamofire",
+                  path: "Source")],
+swiftLanguageVersions: [.v5, .v4, .v3])
