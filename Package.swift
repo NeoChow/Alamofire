@@ -8,4 +8,4 @@ products: [.library(name: "Alamofire",
                     targets: ["Alamofire"])],
 targets: [.target(name: "Alamofire",
                   path: "Source")],
-swiftLanguageVersions: [.v5, .v4, .v3])
+swiftLanguageVersions: [.v5, .v4])
